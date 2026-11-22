@@ -1,0 +1,46 @@
+.siteHeader {
+    background: var(--color-section-header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 16px;
+    border-bottom: 2px solid var(--color-border);}
+
+.title {
+    margin: 0;
+    font-size: inherit;
+    letter-spacing: normal;
+    line-height: 1;
+}
+
+.goTo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    color: var(--color-text);
+    background: var(--color-link);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+
+    &:hover {
+        background: var(--color-section-highlight);
+    }
+}
+
+.myName{
+    text-decoration: none;
+    color: var(--color-text-title);
+    font: 20px/145% var(--sans);
+    font-weight: 600;
+
+    &:hover {
+        color: var(--color-section-highlight-static);
+    }
+}
