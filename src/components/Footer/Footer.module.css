@@ -7,13 +7,12 @@
     align-items: center;
     padding: 0 20px;
     height: 30px;
-
 }
 
 .title {
     letter-spacing: normal;
     color: var(--color-text-title);
-    font: 12px/145% var(--sans);
+    font: 12px/145% var(--heading);
     font-weight: 600;
     margin: 0;
 

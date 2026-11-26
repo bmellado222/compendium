@@ -1,8 +1,8 @@
 :root {
     --color-text: #110305;
     --color-text-title: #fff;
-    --color-body-bg: #FAFAFA;
-    --color-body-bg-dm: #1A1A1A;
+    --color-body-bg: #1A1A1A;
+    --color-text-banner: #fff;
     --color-border: #AB2133;
     --color-section-header: linear-gradient(#BC2438, #D52941);
     --color-section-body: #BC2438;
@@ -36,9 +36,10 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
-        background: var(--color-body-bg-dm);
+        --color-text-banner: #110305;
+        --color-body-bg: #FAFAFA;
     }
 
     #social .button-icon {
