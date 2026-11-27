@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Community Connectivity Orlando",
+    "subtitle": "Frontend Mobile App",
+    "description": "Collaborated with an 11-member development team and an Orlando Community Resource Center to build a device management platform expanding technology and internet access for underserved households. I was the elected Leader for the mobile development sub-team in planning and building a cross-platform iOS and Android application.",
+    "link": "https://github.com/SD-Project-Group-1/mobile-front-end",
+    "image": "src/assets/cityOfOrlando.png",
+    "stack": [
+      "mySQL",
+      "React Native (js)",
+      "nodejs"
+    ]
+  },
+  {
+    "title": "Community Connectivity Orlando",
+    "subtitle": "Frontend Mobile App",
+    "description": "test",
+    "link": "test",
+    "image": "src/assets/cityOfOrlando.png",
+    "stack": [
+      "mySQL",
+      "React Native (js)",
+      "nodejs"
+    ]
+  },
+  {
+    "title": "Community Connectivity Orlando",
+    "subtitle": "Frontend Mobile App",
+    "description": "test",
+    "link": "test",
+    "image": "src/assets/cityOfOrlando.png",
+    "stack": [
+      "mySQL",
+      "React Native (js)",
+      "nodejs"
+    ]
+  }
+]

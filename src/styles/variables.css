@@ -6,12 +6,12 @@
     --color-border: #AB2133;
     --color-section-header: linear-gradient(#BC2438, #D52941);
     --color-section-body: #BC2438;
+    --color-link: linear-gradient(#33DDFF, #00BBE0);
     --color-section-highlight: linear-gradient(#0AD6FF, #33DDFF);
     --color-section-highlight-static: #0AD6FF;
     --color-section-selected: green;
     --color-sectin-selected-border: green;
     --color-tag: #110305;
-    --color-link: linear-gradient(#33DDFF, #00BBE0);
 
 
     --sans: system-ui, 'Segoe UI', Roboto, sans-serif;

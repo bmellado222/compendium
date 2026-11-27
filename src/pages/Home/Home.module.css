@@ -71,6 +71,14 @@ main {
     font: 20px/145% var(--sans);
 }
 
+.projectsBody {
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin-inline: auto;
+    justify-content: space-between;
+
+}
+
 .contact {
     max-width: var(--site-max-width);
     width: 100%;
@@ -110,3 +118,4 @@ main {
         background: var(--color-section-highlight);
     }
 }
+

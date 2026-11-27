@@ -2,9 +2,10 @@ import styles from './Home.module.css'
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card";
 //import Compendium from "../../components/Compendium/Compendium";
-//import Card from "../../components/Card/Card";
 import type { MouseEvent } from "react";
+import projectInformation from '../../assets/projectInformation.json';
 
 async function copyText(text: string): Promise<void> {
     try {
@@ -20,6 +21,14 @@ async function copyText(text: string): Promise<void> {
         document.body.removeChild(ta);
     }
 }
+
+const images = import.meta.glob<string>('/src/assets/*', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+})
+
+const resolveImage = (path: string) => images[`/${path}`] ?? ''
 
 export default function Home() {
     const handleCopy = (e: MouseEvent<HTMLAnchorElement>) => {
@@ -38,10 +47,21 @@ export default function Home() {
                 <Banner/>
                 <section className={styles.projectsHeadline}>
                     <h1 className={styles.projectsTitle}>Projects</h1>
-                    <h1 className={styles.projectsTotal}>4 curated records</h1>
+                    <h1 className={styles.projectsTotal}>{projectInformation.length} curated records</h1>
                 </section>
                 <section className={styles.projectsBody}>
-
+                    {projectInformation.map((p) => (
+                        <Card
+                            key={p.title}
+                            imageSrc={resolveImage(p.image)}
+                            imageAlt={p.title}
+                            title={p.title}
+                            subtitle={p.subtitle}
+                            description={p.description}
+                            tags={p.stack}
+                            linkHref={p.link}
+                        />
+                    ))}
                 </section>
                 <section className={styles.contact}>
                     <h1 className={styles.contactTitle}>CONTACT</h1>
