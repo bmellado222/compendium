@@ -1,0 +1,47 @@
+.bannerContent  {
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-inline: 1rem;
+    flex-direction: column;
+    padding-bottom: 250px;
+}
+
+.bannerTitle {
+    color: var(--color-text-banner);
+    font: 90px/145% var(--heading);
+    margin: 0;
+    padding-bottom: 15px;
+    @media (max-width: 1024px) {
+        font-size: 60px;
+    }
+}
+
+.bannerOccupation {
+    font: 15px/145% var(--sans);
+    font-weight: Bold;
+    margin: 0;
+    color: var(--color-text-banner);
+    padding-bottom: 15px;
+}
+
+.bannerAboutMe {
+    color: var(--color-text-banner);
+    padding-bottom: 25px;
+    width: 600px;
+}
+
+.btn {
+    color: var(--color-text);
+    background: var(--color-link);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+
+    &:hover {
+        background: var(--color-section-highlight);
+    }
+}

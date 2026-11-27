@@ -23,6 +23,7 @@ main {
 }
 
 .siteBody {
+    background: var(--color-body-bg);
 
 }
 
@@ -35,3 +36,86 @@ main {
     left: 0;
     right: 0;
 }
+
+.spacerTop {
+    height: 125px;
+    font-weight: normal;
+
+
+    @media (min-width: var(--site-max-width)) {
+        height: 48px;
+    }
+}
+
+.projectsHeadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    border-bottom: 2px solid white;
+}
+
+.projectsTitle {
+    letter-spacing: normal;
+    color: var(--color-text-banner);
+    font: 30px/145% var(--heading);
+    font-weight: 600;
+    margin: 0;
+}
+
+.projectsTotal {
+    color: var(--color-text-banner);
+    font: 20px/145% var(--sans);
+}
+
+.projectsBody {
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin-inline: auto;
+    justify-content: space-between;
+
+}
+
+.contact {
+    max-width: var(--site-max-width);
+    width: 100%;
+    height: 50px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-section-header);
+    border-radius: 4px;
+}
+
+.contactTitle {
+    letter-spacing: normal;
+    color: var(--color-text-title);
+    font: 12px/145% var(--heading);
+    font-weight: 600;
+    margin: 0;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    color: var(--color-text);
+    background: var(--color-link);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+
+    &:hover {
+        background: var(--color-section-highlight);
+    }
+}
+
